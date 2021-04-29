@@ -1,0 +1,115 @@
+h1 {
+  font-size: 10vh !important;
+  font-family: "Bebas Neue", cursive;
+  color: #eee4b1;
+  margin: 0% !important;
+  margin-left: 20px !important; }
+
+h2, h3, h4, h5 {
+  color: #eee4b1;
+  font-family: "Roboto", sans-serif; }
+
+h6 {
+  color: #eee4b1;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px; }
+
+p {
+  color: #9e9797;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background: #2e102a;
+  background: radial-gradient(circle, #2e102a 0%, #100f11 100%); }
+  body .header {
+    background-image: url(https://wallpaperaccess.com/full/2801183.jpg);
+    width: 100%;
+    height: 100vh;
+    text-align: right;
+    position: relative; }
+    body .header__home--modifier {
+      padding: 0 10vw 0 10vw; }
+    body .header__home, body .header__home--modifier {
+      text-align: center;
+      margin-top: 25vh; }
+  body header {
+    background-image: url(https://wallpaperaccess.com/full/2801183.jpg);
+    width: 100%;
+    height: 45vh;
+    text-align: right;
+    position: relative; }
+    body header nav {
+      background-color: #1a0d18;
+      width: 100%;
+      height: 15vh; }
+      body header nav .container-fluid {
+        width: 100%;
+        padding: 10px;
+        background-color: #212529; }
+    body header #encabezado {
+      text-align: center;
+      margin-top: 15vh;
+      padding: 0 10vw 0 10vw; }
+  body section {
+    text-align: center;
+    padding: 10px 20px; }
+    body section .indice-conteiner {
+      padding: 15px 20px;
+      text-align: center; }
+      body section .indice-conteiner .indice, body section .indice-conteiner .indice li, body section .indice-conteiner .libros .lista, body section .libros .indice-conteiner .lista {
+        list-style: none;
+        padding: 0%; }
+        body section .indice-conteiner .indice li .indice__link:link, body section .indice-conteiner .libros .lista li .indice__link:link, body section .libros .indice-conteiner .lista li .indice__link:link, body section .indice-conteiner .indice li .indice__link:visited, body section .indice-conteiner .libros .lista li .indice__link:visited, body section .libros .indice-conteiner .lista li .indice__link:visited {
+          font-family: "Bebas Neue", cursive;
+          color: #eee4b1;
+          font-size: 17px;
+          letter-spacing: 1.5px;
+          text-decoration: none; }
+    body section .informacion {
+      text-align: center;
+      padding: 10px; }
+      body section .informacion__article {
+        padding: 25px 30px;
+        text-align: center; }
+      body section .informacion__article--modifier {
+        padding: 25px 30px;
+        text-align: center; }
+        body section .informacion__article--modifier .table thead tr th {
+          color: #c4bc98; }
+        body section .informacion__article--modifier .table tbody tr th {
+          font-size: 15px;
+          color: #c4bc98; }
+        body section .informacion__article--modifier .table tbody tr td {
+          font-size: 15px;
+          color: #bf96d3; }
+    body section .libros__img {
+      width: 170px;
+      padding: 10px 0px; }
+    body section .libros .lista {
+      list-style: none;
+      padding: 0%; }
+      body section .libros .lista__uno {
+        color: #c4bc98; }
+      body section .libros .lista__dos {
+        color: #bf96d3; }
+    body section .juego {
+      display: grid;
+      grid-template-rows: .05fr .05fr .05fr; }
+      body section .juego__article {
+        padding: 25px 30px; }
+  body .footer {
+    text-align: center; }
+    body .footer__link:link, body .footer__link:visited {
+      color: #bf96d3;
+      font-family: "Roboto", sans-serif;
+      font-size: 17px;
+      text-decoration: none; }
+
+@media only screen and (max-width: 992px) {
+  h6 {
+    color: #c4bc98;
+    font-size: 3vw;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px; } }

@@ -1,0 +1,219 @@
+// VARIABLES //
+
+$colorTitulo:rgb(238, 228, 177);
+$colorListaUno: rgb(196, 188, 152);
+$colorListaDos: rgb(191, 150, 211);
+$fuenteTitulo: 'Bebas Neue', cursive;
+$fuenteTexto:'Roboto', sans-serif;
+$paddingArticle: 25px 30px;
+
+// MIXIN //
+
+@mixin estiloTabla ($colorLetra){
+    font-size: 15px;
+    color: $colorLetra;
+    
+}
+
+// TEXTOS Y TIPOGRAFIA //
+
+h1{
+    font-size: 10vh !important;
+    font-family: $fuenteTitulo;
+    color: $colorTitulo;
+    margin: 0% !important;
+    margin-left: 20px !important;
+}
+
+h2, h3, h4, h5{
+    color: $colorTitulo;
+    font-family: $fuenteTexto;
+}
+
+h6{
+    color: $colorTitulo;
+    font-family: $fuenteTexto;
+    letter-spacing: 2px;
+}
+
+p{
+    color: rgb(158, 151, 151);
+    font-family: $fuenteTexto;
+
+}
+
+// CUERPO DE PAGINAS GENERAL //
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background: rgb(46,16,42);
+    background: radial-gradient(circle, rgba(46,16,42,1) 0%, rgba(16,15,17,1) 100%);
+
+    .header{
+        background-image: url(https://wallpaperaccess.com/full/2801183.jpg);
+        width: 100%;
+        height: 100vh;
+        text-align: right;
+        position: relative;
+
+        &__home--modifier{
+            @extend .header__home;
+            padding: 0 10vw 0 10vw;
+        }
+        
+        &__home{
+            text-align: center;
+            margin-top: 25vh;
+        }
+    }
+    
+    header{
+        background-image: url(https://wallpaperaccess.com/full/2801183.jpg);
+        width: 100%;
+        height: 45vh;
+        text-align: right;
+        position: relative;
+        
+        nav{
+            background-color: rgb(26, 13, 24);
+            width: 100%;
+            height: 15vh;
+
+            .container-fluid{
+                width: 100%;
+                padding: 10px;
+                background-color: #212529;
+            }
+        }
+
+        #encabezado{
+            text-align: center;
+            margin-top: 15vh;
+            padding: 0 10vw 0 10vw;
+        }
+    }
+
+    section{
+        text-align: center;
+        padding: 10px 20px;
+
+        .indice-conteiner{
+            padding: 15px 20px;
+            text-align: center;
+
+            .indice{
+                list-style: none;
+                padding: 0%;
+    
+                li{
+                    @extend .indice;
+    
+                    .indice__link:link, .indice__link:visited{
+                        font-family: $fuenteTitulo;
+                        color: rgb(238, 228, 177);
+                        font-size: 17px;
+                        letter-spacing: 1.5px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .informacion{
+            text-align: center;
+            padding: 10px;
+
+            &__article{
+                padding: $paddingArticle;
+                text-align: center;
+            }
+
+            &__article--modifier{
+                padding: $paddingArticle;
+                text-align: center;
+
+
+                .table{
+                    thead{
+                        tr{
+                            th{
+                                color: $colorListaUno;
+                            }
+                        }
+                    }
+
+                    tbody{
+                        tr{
+                            th{
+                                @include estiloTabla(rgb(196, 188, 152))
+                            }
+                            
+                            td{
+                                @include estiloTabla(rgb(191, 150, 211))
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .libros{
+            &__img{
+                width: 170px;
+                padding: 10px 0px;
+            }
+
+            .lista{
+                @extend .indice;
+                list-style: none;
+                padding: 0%;
+
+                &__uno{
+                    color: $colorListaUno;
+                }
+
+                &__dos{
+                    color: $colorListaDos;
+                }
+            }
+        }
+
+        .juego{
+            display: grid;
+            grid-template-rows: .05fr .05fr .05fr;
+
+            &__article{
+                padding: $paddingArticle;
+            }
+
+
+        }
+
+    }
+
+    .footer{
+        text-align: center;
+
+        &__link:link, &__link:visited{
+            color: $colorListaDos;
+            font-family: $fuenteTexto;
+            font-size: 17px;
+            text-decoration: none;
+        
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    h6{
+        color: $colorListaUno;
+        font-size: 3vw;
+        font-family: $fuenteTexto;
+        letter-spacing: 2px;
+    }
+
+}
