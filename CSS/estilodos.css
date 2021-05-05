@@ -84,6 +84,13 @@ body {
         body section .informacion__article--modifier .table tbody tr td {
           font-size: 15px;
           color: #bf96d3; }
+    body section .libros .flex-conteiner {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: space-around; }
+      body section .libros .flex-conteiner .flex-item {
+        width: 33em; }
     body section .libros__img {
       width: 170px;
       padding: 10px 0px; }

@@ -160,6 +160,17 @@ body {
         }
 
         .libros{
+            .flex-conteiner{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: space-around;
+
+                .flex-item{
+                    width: 33em;
+                }
+            }
+
             &__img{
                 width: 170px;
                 padding: 10px 0px;
